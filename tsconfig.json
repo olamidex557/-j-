@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@oja/typescript-config/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@oja/config": ["packages/config/src/index.ts"],
+      "@oja/constants": ["packages/constants/src/index.ts"],
+      "@oja/types": ["packages/types/src/index.ts"],
+      "@oja/ui/*": ["packages/ui/src/*"],
+      "@oja/utils": ["packages/utils/src/index.ts"]
+    }
+  },
+  "files": []
+}
