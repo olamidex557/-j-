@@ -6,10 +6,18 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{js,json,md,mjs,ts,tsx,yaml,yml}\"",
-    "typecheck": "turbo run typecheck"
+    "lint-staged": "lint-staged",
+    "commitlint": "commitlint",
+    "typecheck": "turbo run typecheck",
+    "validate": "turbo run build typecheck lint",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@oja/prettier-config": "workspace:*",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
     "prettier": "^3.7.4",
     "turbo": "^2.10.3",
     "typescript": "5.9.2"

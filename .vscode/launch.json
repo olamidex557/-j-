@@ -1,0 +1,13 @@
+{
+  "configurations": [
+    {
+      "name": "Debug Turbo Typecheck",
+      "request": "launch",
+      "runtimeArgs": ["turbo", "typecheck"],
+      "runtimeExecutable": "pnpm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    }
+  ],
+  "version": "0.2.0"
+}
